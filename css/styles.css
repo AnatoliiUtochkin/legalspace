@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background-color: #eeeded;
+  font-family: "Montserrat", sans-serif;
+}
+body nav .nav-container {
+  height: 90px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e2a38;
+  border-radius: 30px;
+}
+body nav .nav-container .logo {
+  visibility: hidden;
+  position: absolute;
+}
+body nav .nav-container .logo-subtitle {
+  visibility: hidden;
+  position: absolute;
+}
+body nav .nav-container .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0px;
+}
+body nav .nav-container .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+body nav .nav-container .nav-links li a:hover {
+  background-color: #2c3c4f;
+}
+body nav .nav-container .burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body nav .nav-container .burger span {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+  body nav .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body nav .nav-container .logo {
+    visibility: visible;
+    height: 65px;
+    left: 20px;
+  }
+  body nav .nav-container .logo-subtitle {
+    display: none;
+  }
+  body nav .nav-container .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #344355;
+    overflow: hidden;
+    max-height: 0;
+    transition: transform 0.55s ease, opacity 0.55s ease, max-height 0.55s ease;
+    z-index: 10;
+    border-radius: 20px;
+  }
+  body nav .nav-container .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+  body nav .nav-container .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  body nav .nav-container .nav-links li a:hover {
+    background-color: #2c3c4f;
+  }
+  body nav .nav-container .nav-links.open {
+    max-height: 1000px;
+    padding: 0px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  body nav .nav-container .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+  }
+  body nav .nav-container .burger span {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  body nav .nav-container .burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  body nav .nav-container .burger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  body nav .nav-container .burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+}/*# sourceMappingURL=styles.css.map */
