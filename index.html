@@ -2,36 +2,193 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Legal Space - Міжнародне юридичне бюро легалізації документів</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <nav>
       <div class="nav-container">
         <img src="images/logo.png" class="logo" alt="Legal Space Logo" />
-        <p class="logo-subtitle">Бюро легалізації документів</p>
 
         <ul class="nav-links">
-          <li>
-            <a href="#довідка-про-несудимість">Довідка про несудимість</a>
-          </li>
-          <li><a href="#апостиль">Апостиль</a></li>
-          <li><a href="#відновлення-документів">Відновлення документів</a></li>
-          <li><a href="#нострифікація-дипломів">Нострифікація дипломів</a></li>
-          <li><a href="#нотаріальні-послуги">Нотаріальні послуги</a></li>
-          <li><a href="#адвокатська-допомога">Адвокатська допомога</a></li>
-          <li><a href="#контакти">Контакти</a></li>
+          <li><a href="#about" class="active">Про нас</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#contacts">Контакти</a></li>
         </ul>
 
+        <div class="nav-contact">
+          <a href="tel:+380999237003" class="call-link"> 099 923 7003</a>
+        </div>
+
         <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </nav>
 
+    <main>
+      <section id="about" class="about-section">
+        <div class="about-container">
+          <h2 class="about-title">Про нас</h2>
+
+          <div class="about-grid">
+            <div class="about-item">
+              <img
+                src="/images/icons/file.png"
+                alt="Документ"
+                class="icon-img"
+              />
+              <p>
+                Юридичне бюро, яке прагне зробити легалізацію документів простою
+                та доступною для кожного.
+              </p>
+            </div>
+            <div class="about-item">
+              <img src="/images/icons/scale.png" alt="Ваги" class="icon-img" />
+              <p>
+                Надаємо повний супровід: апостиль, довідка про несудимість,
+                нотаріальні послуги, нострифікація та інше.
+              </p>
+            </div>
+            <div class="about-item">
+              <img
+                src="/images/icons/handshake.png"
+                alt="Рукостискання"
+                class="icon-img"
+              />
+              <p>
+                Працюємо відповідально. Підтримуємо на кожному етапі оформлення
+                документів.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services-section">
+        <div class="service-wrapper">
+          <h2 class="section-title">Наші послуги</h2>
+
+          <div class="service-block">
+            <div class="service-marker"><i class="fas fa-file-alt"></i></div>
+            <div class="service-content">
+              <h3>Довідки</h3>
+              <ul>
+                <li>Довідка про несудимість (Україна та закордон)</li>
+                <li>Довідка про наявність посвідчення водія</li>
+              </ul>
+              <p>
+                Документи, що підтверджують юридичну чистоту особи, необхідні
+                для віз, роботи чи навчання.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-block">
+            <div class="service-marker"><i class="fas fa-stamp"></i></div>
+            <div class="service-content">
+              <h3>Апостиль</h3>
+              <p>
+                Штамп для міжнародного визнання українських документів у
+                країнах-учасницях Гаазької конвенції.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-block">
+            <div class="service-marker"><i class="fas fa-sync-alt"></i></div>
+            <div class="service-content">
+              <h3>Відновлення документів</h3>
+              <ul>
+                <li>Документи РАЦС (народження, смерть, розлучення)</li>
+                <li>Освітні документи (атестат, диплом)</li>
+                <li>ІПН, рішення суду</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-block">
+            <div class="service-marker"><i class="fas fa-certificate"></i></div>
+            <div class="service-content">
+              <h3>Нострифікація документів</h3>
+              <p>
+                Офіційне визнання іноземного диплома для роботи чи навчання в
+                Україні.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-block">
+            <div class="service-marker"><i class="fas fa-pen-fancy"></i></div>
+            <div class="service-content">
+              <h3>Нотаріальні послуги</h3>
+              <ul>
+                <li>Заява про сімейний стан</li>
+                <li>Засвідчення підпису</li>
+                <li>Засвідчення копій документів</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-block">
+            <div class="service-marker">
+              <i class="fas fa-balance-scale"></i>
+            </div>
+            <div class="service-content">
+              <h3>Адвокатські послуги</h3>
+              <p><strong>Цивільні справи:</strong></p>
+              <ul>
+                <li>Розлучення, аліменти, поділ майна</li>
+                <li>Спадкові, трудові, кредитні спори</li>
+              </ul>
+              <p><strong>Сімейні справи:</strong></p>
+              <ul>
+                <li>Усиновлення, місце проживання дитини, позбавлення батьківських
+                  прав
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-block">
+            <div class="service-marker"><i class="fas fa-globe"></i></div>
+            <div class="service-content">
+              <h3>Легалізація документів</h3>
+              <p>
+                Повна консульська легалізація документів для країн, що не
+                визнають апостиль.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts">
+        <h2>Контакти</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ut
+          natus exercitationem laboriosam nihil. Inventore voluptas eaque, culpa
+          rerum quia deserunt repellendus aliquam perferendis, corporis numquam
+          ex consequuntur, expedita temporibus? Deleniti ab debitis sapiente
+          labore qui officiis possimus? Aut, placeat necessitatibus?
+          Exercitationem ratione, aliquid animi sint alias quidem dolore
+          quibusdam expedita sunt fugiat eligendi atque nemo corporis asperiores
+          totam mollitia! Distinctio mollitia possimus excepturi veniam iure
+          corrupti ratione numquam praesentium aspernatur? Impedit voluptatem
+          voluptates eum nemo, officia ex ipsam esse laborum aliquam,
+          voluptatibus deserunt hic praesentium magnam officiis. Quisquam, iure?
+        </p>
+      </section>
+    </main>
+
     <script src="js/burger-menu.js"></script>
+    <script src="js/active-section.js"></script>
   </body>
 </html>
